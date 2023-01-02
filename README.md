@@ -1,0 +1,47 @@
+# HELL_TEST_DT_W2
+How to use
+
+Copy and paste all the files to your HW1 working directory.
+
+Run "./run_all_tests.sh " to run all the exercises tests, if ex_num is not inserted then all exercises tests will run.
+
+Troubleshoot
+
+"bad interpreter: No such file or directory" Error:
+
+run:
+
+sudo apt-get install dos2unix
+dos2unix run_all_tests.sh
+"Permission denied" Error:
+
+run:
+
+chmod 777 run_all_tests.sh
+chmod 777 run_test.sh
+
+
+
+
+
+
+
+
+Test-File-Generator
+
+This is bash script that you can use to generate test files(both input and output) for a given problem.
+
+Prerequisites :
+
+You will have to have the test generation file and the source code file ready beforehand to use this.
+
+Usage :
+
+Once ready, all you have to do is run the script using the command  ./script.sh  and this will run the file.
+After doing this, you will need to do as the commands say and voila! Your test files will be ready in the blink of an eye!
+
+ability:
+ have much error detection ablility (to detect false filenames, overwriting a file etc...) as of now but will be added in the future.
+Added the ability to erase and overwrite old directories named input and output and also fixed a bug in the output file generation loop.
+
+
